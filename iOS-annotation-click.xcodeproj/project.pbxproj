@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A3C232D1E9B2B9F006FEC59 /* iOS_annotation_clickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C232C1E9B2B9F006FEC59 /* iOS_annotation_clickUITests.m */; };
 		AAEF7602D1E32918E44FCE4A /* libPods-iOS-annotation-click.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49BA66D4FFC9CFD9F7BA0A2 /* libPods-iOS-annotation-click.a */; };
 		AEC85272B502182F99E0C4C7 /* libPods-iOS-annotation-click-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E217FA9DB4A992EF30B068A7 /* libPods-iOS-annotation-click-swift.a */; };
 		B6DCF5FA1E94C4E700B9EA53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DCF5F91E94C4E700B9EA53 /* main.m */; };
@@ -24,10 +25,23 @@
 		B6DCF62E1E94EA9900B9EA53 /* userPosition@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6DCF62D1E94EA9900B9EA53 /* userPosition@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A3C232F1E9B2B9F006FEC59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6DCF5ED1E94C4E700B9EA53 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6DCF5F41E94C4E700B9EA53;
+			remoteInfo = "iOS-annotation-click";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3915D5A3AA6C86A55766A6E0 /* Pods-iOS-annotation-click-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-annotation-click-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-annotation-click-swift/Pods-iOS-annotation-click-swift.release.xcconfig"; sourceTree = "<group>"; };
 		47A9E8AA1BDBA202EBA7EECE /* Pods-iOS-annotation-click-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-annotation-click-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-annotation-click-swift/Pods-iOS-annotation-click-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		66E5EA5CF648B47A4D5B0806 /* Pods-iOS-annotation-click.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-annotation-click.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-annotation-click/Pods-iOS-annotation-click.release.xcconfig"; sourceTree = "<group>"; };
+		6A3C232A1E9B2B9F006FEC59 /* iOS-annotation-clickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-annotation-clickUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A3C232C1E9B2B9F006FEC59 /* iOS_annotation_clickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_annotation_clickUITests.m; sourceTree = "<group>"; };
+		6A3C232E1E9B2B9F006FEC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6DCF5F51E94C4E700B9EA53 /* iOS-annotation-click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-annotation-click.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DCF5F91E94C4E700B9EA53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6DCF5FB1E94C4E700B9EA53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A3C23271E9B2B9F006FEC59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6DCF5F21E94C4E700B9EA53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,11 +114,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6A3C232B1E9B2B9F006FEC59 /* iOS-annotation-clickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A3C232C1E9B2B9F006FEC59 /* iOS_annotation_clickUITests.m */,
+				6A3C232E1E9B2B9F006FEC59 /* Info.plist */,
+			);
+			path = "iOS-annotation-clickUITests";
+			sourceTree = "<group>";
+		};
 		B6DCF5EC1E94C4E700B9EA53 = {
 			isa = PBXGroup;
 			children = (
 				B6DCF5F71E94C4E700B9EA53 /* iOS-annotation-click */,
 				B6DCF6141E94C66F00B9EA53 /* iOS-annotation-click-swift */,
+				6A3C232B1E9B2B9F006FEC59 /* iOS-annotation-clickUITests */,
 				B6DCF5F61E94C4E700B9EA53 /* Products */,
 				5B41CFA7A735EEE0FF7BEB85 /* Pods */,
 				189FE3C27D61C3F857A7EAED /* Frameworks */,
@@ -109,6 +140,7 @@
 			children = (
 				B6DCF5F51E94C4E700B9EA53 /* iOS-annotation-click.app */,
 				B6DCF6131E94C66F00B9EA53 /* iOS-annotation-click-swift.app */,
+				6A3C232A1E9B2B9F006FEC59 /* iOS-annotation-clickUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +204,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A3C23291E9B2B9F006FEC59 /* iOS-annotation-clickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A3C23331E9B2B9F006FEC59 /* Build configuration list for PBXNativeTarget "iOS-annotation-clickUITests" */;
+			buildPhases = (
+				6A3C23261E9B2B9F006FEC59 /* Sources */,
+				6A3C23271E9B2B9F006FEC59 /* Frameworks */,
+				6A3C23281E9B2B9F006FEC59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A3C23301E9B2B9F006FEC59 /* PBXTargetDependency */,
+			);
+			name = "iOS-annotation-clickUITests";
+			productName = "iOS-annotation-clickUITests";
+			productReference = 6A3C232A1E9B2B9F006FEC59 /* iOS-annotation-clickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B6DCF5F41E94C4E700B9EA53 /* iOS-annotation-click */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6DCF60C1E94C4E700B9EA53 /* Build configuration list for PBXNativeTarget "iOS-annotation-click" */;
@@ -222,6 +272,12 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = autonavi;
 				TargetAttributes = {
+					6A3C23291E9B2B9F006FEC59 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = B6DCF5F41E94C4E700B9EA53;
+					};
 					B6DCF5F41E94C4E700B9EA53 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = YMJ372W38W;
@@ -249,11 +305,19 @@
 			targets = (
 				B6DCF5F41E94C4E700B9EA53 /* iOS-annotation-click */,
 				B6DCF6121E94C66F00B9EA53 /* iOS-annotation-click-swift */,
+				6A3C23291E9B2B9F006FEC59 /* iOS-annotation-clickUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A3C23281E9B2B9F006FEC59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6DCF5F31E94C4E700B9EA53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +436,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A3C23261E9B2B9F006FEC59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A3C232D1E9B2B9F006FEC59 /* iOS_annotation_clickUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6DCF5F11E94C4E700B9EA53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,6 +464,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A3C23301E9B2B9F006FEC59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6DCF5F41E94C4E700B9EA53 /* iOS-annotation-click */;
+			targetProxy = 6A3C232F1E9B2B9F006FEC59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6DCF6011E94C4E700B9EA53 /* Main.storyboard */ = {
@@ -429,6 +509,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A3C23311E9B2B9F006FEC59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-annotation-clickUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-annotation-clickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dc33f640-6181-4574-b00d-9cd2874a7f9a";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "iOS-annotation-click";
+			};
+			name = Debug;
+		};
+		6A3C23321E9B2B9F006FEC59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "iOS-annotation-clickUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-annotation-clickUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "dc33f640-6181-4574-b00d-9cd2874a7f9a";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = "iOS-annotation-click";
+			};
+			name = Release;
+		};
 		B6DCF60A1E94C4E700B9EA53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -539,11 +652,14 @@
 			baseConfigurationReference = 66E5EA5CF648B47A4D5B0806 /* Pods-iOS-annotation-click.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = "iOS-annotation-click/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.iOS-annotation-click";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 			};
 			name = Release;
 		};
@@ -585,6 +701,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A3C23331E9B2B9F006FEC59 /* Build configuration list for PBXNativeTarget "iOS-annotation-clickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A3C23311E9B2B9F006FEC59 /* Debug */,
+				6A3C23321E9B2B9F006FEC59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B6DCF5F01E94C4E700B9EA53 /* Build configuration list for PBXProject "iOS-annotation-click" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

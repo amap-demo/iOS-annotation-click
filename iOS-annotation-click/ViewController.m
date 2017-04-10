@@ -23,7 +23,7 @@
     
     self.mapView = [[MAMapView alloc] initWithFrame:self.view.bounds];
     self.mapView.delegate = self;
-    
+    self.mapView.allowsAnnotationViewSorting = NO;
     [self.view addSubview:self.mapView];
 }
 
@@ -35,15 +35,22 @@
 
 - (void)onClick:(UITapGestureRecognizer *)gesture {
     NSLog(@"=== annotation clicked");
+
     MAAnnotationView *annoView = (MAAnnotationView*) gesture.view;
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"alert" message:[NSString stringWithFormat:@"onClick-%@", annoView.annotation.title] delegate:nil cancelButtonTitle:@"cancel" otherButtonTitles:nil, nil];
+    
+    [alert show];
+    
     if(annoView.annotation == self.mapView.selectedAnnotations.firstObject) {
-        if(annoView.selected == NO) {
+        if(annoView.selected == NO) { // 修复 5.0.0上annotation选中后重用的bug。
             [annoView setSelected:YES animated:YES];
         }
         return;
     } else {
         [self.mapView selectAnnotation:annoView.annotation animated:YES];
     }
+
 }
 
 #pragma mark - mapview delegate
@@ -69,6 +76,7 @@
     }
 
     [self.mapView addAnnotations:arr];
+    [self.mapView showAnnotations:arr animated:NO];
 }
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation
@@ -88,6 +96,11 @@
     }
     
     return nil;
+}
+
+- (void)mapView:(MAMapView *)mapView didSelectAnnotationView:(MAAnnotationView *)view
+{
+    NSLog(@"onClick-%@", view.annotation.title);
 }
 
 @end
